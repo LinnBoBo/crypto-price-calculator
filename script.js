@@ -9,7 +9,7 @@ document.getElementById('cryptoForm').addEventListener('submit', function(event)
     let pricePerCoin;
     if (totalSupply && marketCap && totalSupply !== 0) {
         pricePerCoin = marketCap / totalSupply;
-        document.getElementById('pricePerCoin').textContent = pricePerCoin.toFixed(2); // Display result
+        document.getElementById('pricePerCoin').textContent = pricePerCoin.toFixed(6); // Display result
     } else {
         document.getElementById('pricePerCoin').textContent = "Invalid Input"; // Handle error
     }
